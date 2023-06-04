@@ -1,31 +1,33 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import ButtonsExample from '../components/HomeStack'
 
 export default function Home() {
   return (
-    <Container>
+    <div className={styles.container}>
       <Head>
-        <title>Moosecodes.com</title>
+        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Moose Codes
+          Contact Me
         </h1>
 
         <p className={styles.description}>
-          <code> Under Construction.  Check Back Soon!</code>
+          <code>moosecodes@gmail.com</code>
         </p>
 
-        <p className={styles.description}>
-          In the meantime, feel free to look around!
-        </p>
-
-        <ButtonsExample></ButtonsExample>
+        <div className={styles.grid}>
+          <a href="http://linkedin.com/in/mustafaishaq" className={styles.card_wide}>
+            <h3>Hi, my name is Mustafa...</h3>
+            <p>I am a Software Engineer specializing in web application development.</p>
+            <p>Vue.js, React.js, Angular</p>
+            <p>Javascript, PHP</p>
+            <p>Node.js, Laravel, Express.js</p>
+            <p>View my work experience here</p>
+          </a>
+        </div>
       </main>
 
       <footer>
@@ -34,7 +36,8 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by Next.js
+          Powered by Next.js / {' '}
+          <img src="/vercel.svg" alt="Next.js" className={styles.logo} />
         </a>
       </footer>
 
@@ -88,6 +91,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </Container>
+    </div>
   )
 }
