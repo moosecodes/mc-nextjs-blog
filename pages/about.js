@@ -11,19 +11,17 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Resume
+          About Me
         </h1>
 
         <p className={styles.description}>
           <code>Under construction.  Check Back Soon!</code>
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Download</h3>
-            <p>PDF File</p>
-          </a>
-        </div>
+        <p>
+          I am a US Citizen with 7+ years of experience working in Agile environments using web technologies such as Vue.js, React, and Angular.  My most recent position was heavily focused on the frontend, specifically using Vue.js with Vuex talking to backend microservices built with Laravel and Python.  I am always eager to learn new technologies so that I can solve more challenging problems.
+        </p>
+
       </main>
 
       <footer>

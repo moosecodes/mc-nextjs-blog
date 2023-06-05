@@ -11,7 +11,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Resume
+          Blog
         </h1>
 
         <p className={styles.description}>
