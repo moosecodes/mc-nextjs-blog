@@ -34,7 +34,8 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by Next.js
+          Powered by Next.js / {' '}
+          <img src="/vercel.svg" alt="Next.js" className={styles.logo} />
         </a>
       </footer>
 
