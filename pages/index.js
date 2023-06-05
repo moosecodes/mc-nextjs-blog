@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-import ButtonsExample from '../components/HomeStack'
+import HomeStack from '../components/HomeStack'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <code> Under Construction</code>
+          <code>Under Construction</code>
         </p>
 
         <p className={styles.description}>
@@ -29,7 +29,7 @@ export default function Home() {
           In the meantime, feel free to look around!
         </p>
 
-        <ButtonsExample></ButtonsExample>
+        <HomeStack></HomeStack>
       </main>
 
       <footer>
