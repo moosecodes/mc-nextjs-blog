@@ -18,7 +18,10 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <code> Under Construction.</code>
+          <code> Under Construction</code>
+        </p>
+
+        <p className={styles.description}>
           <code>Check Back Soon!</code>
         </p>
 
