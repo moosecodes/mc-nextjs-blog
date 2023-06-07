@@ -7,7 +7,7 @@ function HomeStack() {
   return (
     <Container>
 
-      <div className="d-flex justify-content-center mx-2 my-4">
+      <div className="d-flex justify-content-center mx-2 my-4 d-none">
         <Image src="https://placehold.co/75" className="mx-auto" rounded />
         <Image src="https://placehold.co/75" className="mx-auto" rounded />
         <Image src="https://placehold.co/75" className="mx-auto" rounded />

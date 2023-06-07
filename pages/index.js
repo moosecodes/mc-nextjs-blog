@@ -1,33 +1,19 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../styles/Home.module.scss';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import HomeStack from '../components/HomeStack'
 
 export default function Home() {
   return (
     <Container>
-      <Head>
-        <title>Moosecodes.com</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
-        <h1 className={styles.title}>
-          Moose Codes
-        </h1>
 
-        <p className={styles.description}>
-          <code>Under Construction</code>
-        </p>
+        <h1>Moose Codes</h1>
 
-        <p className={styles.description}>
-          <code>Check Back Soon!</code>
-        </p>
+        <p><code>Under construction</code></p>
 
-        <p className={styles.description}>
-          In the meantime, feel free to look around!
-        </p>
+        <Image src="https://placehold.co/600x400" />
 
         <HomeStack></HomeStack>
       </main>

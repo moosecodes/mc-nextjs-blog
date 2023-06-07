@@ -1,9 +1,11 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../styles/Home.module.scss';
+import Container from "react-bootstrap/Container";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,6 +22,10 @@ export default function Home() {
 
         <p>
           I am a US Citizen with 7+ years of experience working in Agile environments using web technologies such as Vue.js, React, and Angular.  My most recent position was heavily focused on the frontend, specifically using Vue.js with Vuex talking to backend microservices built with Laravel and Python.  I am always eager to learn new technologies so that I can solve more challenging problems.
+        </p>
+
+        <p>
+          More coming soon...
         </p>
 
       </main>
@@ -85,6 +91,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Container>
   )
 }
