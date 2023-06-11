@@ -11,7 +11,7 @@ export default function Home() {
 
   // Make a request for data to an API
   useEffect(() => {
-    axios.get('http://104.237.155.152/api/weather/60031')
+    axios.get('https://104.237.155.152/api/weather/60031')
       .then(function (response) {
         setWeather(response.data)
         console.log(weather)
