@@ -6,7 +6,7 @@ import HomeStack from '../components/HomeStack'
 import axios from 'axios'
 import { useEffect, useState } from "react";
 
-export default function Home(props) {
+export default function Home() {
   const [weather, setWeather] = useState({});
 
   // Make a request for data to an API
