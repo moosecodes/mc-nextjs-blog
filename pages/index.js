@@ -3,8 +3,24 @@ import styles from '../styles/Home.module.scss';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import HomeStack from '../components/HomeStack'
+import axios from 'axios'
+import { useEffect, useState } from "react";
 
-export default function Home() {
+export default function Home(props) {
+  const [weather, setWeather] = useState({});
+
+  // Make a request for data to an API
+  useEffect(() => {
+    axios.get('http://104.237.155.152/api/weather/60031')
+      .then(function (response) {
+        setWeather(response.data)
+        console.log(weather)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <Container>
       <main>
@@ -12,6 +28,8 @@ export default function Home() {
         <h1>Moose Codes</h1>
 
         <p><code>Under construction</code></p>
+
+        <p>{ weather.temp_f }</p>
 
         <Image src="https://placehold.co/600x400" />
 
